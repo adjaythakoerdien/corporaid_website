@@ -9,6 +9,11 @@
     height: 722px;
 }
 
+.hero-image.beneden {
+    height: 500px;
+    background-position: top right;
+}
+
 .hero-container {
     max-width: 720px;
     /*background-color: aliceblue;*/
