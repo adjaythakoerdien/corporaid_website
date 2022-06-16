@@ -17,14 +17,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Mulish:wght@300;400&family=Roboto+Slab&display=swap" rel="stylesheet">
 
-
+<!--    Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>CorporAid</title>
 </head>
 <body>
 
 <nav class="blue-grey lighten-3">
-    <div class="container nav-wrapper blue-grey lighten-3">
+    <div class="nav-wrapper blue-grey lighten-3">
         <a href="#" class="brand-logo black-text">CorporAid</a>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons" style="color:#323E66;">menu</i></a>
+
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="#" class="black-text">Over ons</a></li>
             <li><a href="#" class="black-text">Onze diensten</a></li>
@@ -33,6 +36,17 @@
         </ul>
     </div>
 </nav>
+
+<ul class="sidenav" id="slide-out">
+    <li><a href="#" class="black-text">Over ons</a></li>
+    <li><a href="#" class="black-text">Onze diensten</a></li>
+    <li><a href="#" class="black-text">Klant cases</a></li>
+    <li><a href="#" class="waves-effect waves-light btn z-depth-0 deep-orange accent-2" style="border-radius:34px;">Contact</a></li>
+</ul>
+<!--<a href="#" data-target="slide-out" class="sidenav-trigger hide-on-med-and-up"><i class="material-icons">menu</i></a>-->
+
+
+
 
 <main style="height:722px;width:100%;background-color:#323E66;">
     <section class="hero-section">
@@ -78,5 +92,9 @@
 
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+  const slide_menu = document.querySelectorAll('.sidenav');
+  M.Sidenav.init(slide_menu,{draggable: true,});
+</script>
 </body>
 </html>
